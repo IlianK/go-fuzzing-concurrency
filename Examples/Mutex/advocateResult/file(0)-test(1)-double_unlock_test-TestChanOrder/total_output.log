@@ -1,0 +1,1390 @@
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_1
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_2
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_3
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_4
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_5
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_6
+--- PASS: TestChanOrder (0.10s)
+PASS
+ok  	mutex	0.104s
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_7
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_8
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_9
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_10
+--- PASS: TestChanOrder (0.10s)
+PASS
+ok  	mutex	0.106s
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_11
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_12
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_13
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_14
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_15
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_16
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_17
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_18
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_19
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_20
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_21
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_22
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_23
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_24
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_25
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_26
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_27
+--- PASS: TestChanOrder (0.10s)
+PASS
+ok  	mutex	0.105s
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_28
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_29
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_30
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_31
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_32
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_33
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_34
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_35
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_36
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_37
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_38
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_39
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_40
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_41
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_42
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_43
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_44
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_45
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_46
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_47
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_48
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_49
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_50
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_51
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_52
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_53
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_54
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_55
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_56
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_57
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_58
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_59
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_60
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.107s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_61
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_62
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_63
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_64
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_65
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_66
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_67
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_68
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_69
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_70
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_71
+--- PASS: TestChanOrder (0.10s)
+PASS
+ok  	mutex	0.105s
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_72
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_73
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_74
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_75
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_76
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_77
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_78
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_79
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_80
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_81
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_82
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_83
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_84
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_85
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_86
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_87
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_88
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_89
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_90
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_91
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_92
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.107s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_93
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_94
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_95
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.104s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_96
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_97
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_98
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.106s
+FAIL
+==================================
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_99
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL

@@ -1,0 +1,12 @@
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go
+TestName:  TestSndRcv
+Import added at line: 3
+Header added at line: 21
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestSndRcv
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/fuzzingTraces/fuzzingTrace_99
+received 1 
+--- PASS: TestSndRcv (0.10s)
+PASS
+ok  	example.com/cockroach18101	0.105s

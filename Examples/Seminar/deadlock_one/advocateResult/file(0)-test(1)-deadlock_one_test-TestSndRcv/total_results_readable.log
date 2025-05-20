@@ -1,0 +1,1000 @@
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@42
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@272
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@270
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@270
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@366
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@306
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@328
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@364
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@306
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@318
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@308
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@308
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@298
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@308
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@314
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@316
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@360
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@324
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@362
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@318
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@314
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@310
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@310
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@318
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@358
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@318
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@366
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@308
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@324
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@352
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@324
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@366
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@366
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@310
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@318
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@324
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@302
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@316
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@364
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@364
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@364
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@318
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@308
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@302
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@318
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@306
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@306
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@308
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@366
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@324
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@366
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@318
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@308
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@332
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@340
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@320
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@366
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@306
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@352
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@306
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@324
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@308
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@364
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@310
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@310
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@304
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@324
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@324
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@366
+
+
+```==================================
+```
+==================== Summary ====================
+
+-------------------- Critical -------------------
+
+1 Leak on routine with unknown cause:
+	fork: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Seminar/deadlock_one/deadlock_one_test.go:17@322
+
+
+```

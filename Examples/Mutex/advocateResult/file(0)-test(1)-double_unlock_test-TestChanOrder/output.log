@@ -1,0 +1,13 @@
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+TestName:  TestChanOrder
+Import added at line: 3
+Header added at line: 7
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/double_unlock_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestChanOrder
+Reading trace from /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/fuzzingTraces/fuzzingTrace_99
+    double_unlock_test.go:25: unexpected value: got 2, want 1
+--- FAIL: TestChanOrder (0.10s)
+FAIL
+FAIL	mutex	0.105s
+FAIL
