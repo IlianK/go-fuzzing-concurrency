@@ -76,6 +76,14 @@ Run in /ADVOCATE/advocate:
 -prog deadlock_test \
 ```
 
+```bash
+./advocate fuzzing \
+-path ~/Projects/Go_Fuzzing_Concurrency/Examples/Mutex/ \
+-exec TestChanOrder \
+-fuzzingMode GoPie \
+-prog deadlock_test \
+```
+
 # Advocate Fuzzing Modes
 
 This section explains the different fuzzing modes provided by Advocate, and the types of concurrency issues each is best suited to uncover. For each mode, relevant example folders are provided to help with testing and experimentation.
@@ -131,3 +139,11 @@ This section explains the different fuzzing modes provided by Advocate, and the 
 - **Example scenario:** Two `Once.Do()` calls — both attempt to initialize, but only one should succeed.
 
 ---
+
+## Examples
+- Autonome Systeme
+- Go Primitve Beispiele
+- Go Projects
+
+- Comparison Bug Found and Type Log
+- Comparison Time Log+
