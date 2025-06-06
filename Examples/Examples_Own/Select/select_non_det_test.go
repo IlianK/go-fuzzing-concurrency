@@ -1,12 +1,17 @@
 package selectblock
 
 import (
+	"advocate"
 	"fmt"
 	"testing"
 	"time"
 )
 
 func TestNonDeterminism(t *testing.T) {
+	// ======= Preamble Start =======
+	advocate.InitTracing(600)
+	defer advocate.FinishTracing()
+	// ======= Preamble End =======
 	ch1 := make(chan int, 1)
 	ch2 := make(chan int, 1)
 

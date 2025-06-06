@@ -1,0 +1,13 @@
+FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/Channel/chan_close_test.go
+TestName:  TestDoubleClose
+Import added at line: 3
+Header added at line: 5
+Header added at file: /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/Channel/chan_close_test.go
+go version go1.24.1 linux/amd64 ADVOCATE
+=== RUN   TestDoubleClose
+
+Exit Replay with code  32 Close on close
+Exit Message: panic: close of closed channel
+
+FAIL	channel	0.103s
+FAIL
