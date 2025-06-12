@@ -1,0 +1,5 @@
+TestName,NoEvents,NoGoroutines,NoAtomicEvents,NoChannelEvents,NoSelectEvents,NoMutexEvents,NoWaitgroupEvents,NoCondVariablesEvents,NoOnceOperations
+TestBufferedFillNoRead,6,2,0,3,0,0,0,0,0
+TestBufferedFillNoRead,7,26,0,3,0,0,0,0,0
+TestBufferedFillNoRead,6,4,0,3,0,0,0,0,0
+TestBufferedFillNoRead,0,0,0,0,0,0,0,0,0

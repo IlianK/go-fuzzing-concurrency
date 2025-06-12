@@ -1,0 +1,4 @@
+Mode,Unique_Bugs,Bug_Types,Total_Bugs,Panics,Leaks,Confirmed_Replays,Total_Runs,Total_Time_s,Rec_s,Ana_s,Rep_s,Bugs_per_1000_Runs,Bugs_per_Minute,Runs_per_Minute,Replays_Written,Replays_Successful
+GFuzz,1,R01,0,0,0,0,1,0.43785,0.26557,0.00001,0.00000,0.0,0.0,137.03,0,0
+GoPie,1,R01,0,0,0,0,1,0.43012,0.26812,0.00001,0.00000,0.0,0.0,139.5,0,0
+GoPie+,1,R01,0,0,0,0,1,0.40868,0.24566,0.00001,0.00000,0.0,0.0,146.81,0,0

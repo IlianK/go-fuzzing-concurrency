@@ -145,7 +145,25 @@ This directory contains simple Go programs that intentionally include common con
 - **Select**: select blocks, non-deterministic select
 - **Synchronization**: mutex deadlocks, unlocks, waitgroups, race condition
 
+```bash
+| Testfunktion                 | Ziel-Szenario | Beschreibung                            |
+| ---------------------------- | ------------- | --------------------------------------- |
+| `TestA01_LockedTwice`        | A01           | Lock zweimal ohne Unlock                |
+| `TestA02_MissingUnlock`      | A02           | Lock ohne Unlock                        |
+| `TestA03_UnlockWithoutLock`  | A03           | Unlock ohne Lock                        |
+| `TestA04_ConcurrentUnlock`   | A04           | Fremdroutine entsperrt Lock             |
+| `TestA05_LockOrderInversion` | A05           | Zwei Locks mit invertierter Reihenfolge |
+| `TestA06_LoopWithLock`       | A06           | Lock innerhalb von Schleife             |
+| `TestA07_LockInSelect`       | A07           | Lock in Select-Zweig                    |
+| `TestL01_GoroutineLeak`      | L01           | Goroutine wartet ewig                   |
+| `TestP01_SendOnClosed`       | P01           | Schreiben auf geschlossenen Channel     |
+| `TestP02_RecvOnClosed`       | P02           | Lesen von geschlossenem Channel         |
+| `TestP03_RecvFromNil`        | P03           | Lesen von nil-Channel → Hänger          |
+| `TestP04_SendToNil`          | P04           | Schreiben auf nil-Channel → Hänger      |
+| `TestP05_DoubleClose`        | P05           | Zwei mal close → panic                  |
+
 Each example has a brief in-code description of the intended bug and expected behavior.
+
 
 ---
 
@@ -180,6 +198,17 @@ To process, analyze and fuzz the examples, there are specific scripts written:
 - `run_project_fuzzing.sh`: Detects test functions within large projects.
 
 All three `run_` scripts are interactive. They first take in the arguments for project / example directory (and fuzz mode) and then give the user a choice by number input which of the detected test functions should be executed.
+
+| Spalte             | Quelle                           | Beschreibung                                |
+| ------------------ | -------------------------------- | ------------------------------------------- |
+| `Unique_Bugs`      | `statsAll_*.csv`                 | Anzahl eindeutiger Bug-IDs                  |
+| `Unique_Bug_Types` | Bug-IDs aus `NoUniqueDetectedXX` | Liste gefundener Bug-IDs                    |
+| `Total_Bugs`       | `statsAnalysis_*.csv` (Feld 2)   | Anzahl aller tatsächlich verifizierten Bugs |
+| `Total_Runs`       | `statsFuzzing_*.csv` (Feld 2)    | Anzahl der Fuzzing-Durchläufe               |
+| `Total_Time_s`     | `time_total.txt`                 | Gesamtdauer in Sekunden                     |
+| `Rec_s`            | `times_detail_*.csv` (Recording) | Zeitaufwand Recording                       |
+| `Ana_s`            | `times_detail_*.csv` (Analysis)  | Zeitaufwand Analyse                         |
+| `Rep_s`            | `times_detail_*.csv` (Replay)    | Zeitaufwand Replay                          |
 
 ---------------------------------------------------------------------------------------------------------
 
@@ -271,6 +300,9 @@ Run in /ADVOCATE/advocate:
 --------------------------------------------------------------------
 
 ## Examples
+TODO:
+- 1-3 general explanations for scenario
+- 3 comparison across modes per cat 
 
 --- 
 
@@ -283,6 +315,9 @@ Run in /ADVOCATE/advocate:
 ---
 
 ### Examples_Projects
+- similar style as GFuzz: https://github.com/system-pclub/GFuzz
+- compose
+- etcd
 
 
 ---

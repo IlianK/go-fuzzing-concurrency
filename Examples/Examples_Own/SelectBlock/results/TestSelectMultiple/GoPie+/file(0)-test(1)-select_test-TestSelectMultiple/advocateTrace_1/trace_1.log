@@ -1,0 +1,5 @@
+N,2,1000000001,NC,0,/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/SelectBlock/select_test.go:38
+N,4,1000000002,NC,0,/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/SelectBlock/select_test.go:39
+G,6,2,/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/SelectBlock/select_test.go:40
+S,70,72,1000000006,C.1000000003.R.f.0.1.0~C.1000000002.R.f.0.0.0~C.1000000001.R.f.0.0.0,2,/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/SelectBlock/select_test.go:42
+E,80

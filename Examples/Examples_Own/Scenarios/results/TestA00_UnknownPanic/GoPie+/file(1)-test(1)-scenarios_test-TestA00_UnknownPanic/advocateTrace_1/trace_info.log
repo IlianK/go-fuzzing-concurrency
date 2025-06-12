@@ -1,0 +1,7 @@
+ExitCode!3
+ExitPosition!/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/Scenarios/scenarios_test.go:17
+ReplayTimeout!0
+ReplayDisabled!0
+ReplayAck!0
+NumberRoutines!1
+Runtime!0

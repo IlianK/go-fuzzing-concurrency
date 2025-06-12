@@ -1,0 +1,4 @@
+Mode,Unique_Bugs,Unique_Bug_Types,Total_Bugs,Total_Runs,Total_Time_s,Rec_s,Ana_s,Rep_s
+GFuzz,0,None,0,3,05.30579,0.27401,0.00000,0.00000
+GoPie,0,None,0,1,0.39335,0.26281,0.00000,0.00000
+GoPie+,0,None,0,1,0.39915,0.25142,0.00000,0.00000
