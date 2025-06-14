@@ -1,2 +1,0 @@
-N,2,1000000001,NC,0,/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/Channel/channel_unbuffered_test.go:36
-C,4,0,1000000001,R,f,1,0,0,/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/Channel/channel_unbuffered_test.go:38

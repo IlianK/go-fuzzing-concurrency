@@ -5,12 +5,12 @@ set -euo pipefail
 # Config
 # -----------------------------
 ADVOCATE_BIN="./ADVOCATE/advocate/advocate"
-MODES=("GFuzz" "GoPie" "GoPie+")
+MODES=("GFuzz" "GFuzzHB" "Flow" "GFuzzHBFlow" "GoPie" "GoPie+" "GoPieHB")
 MAX_RUNS=100
 TIMEOUT=60
 
 # -----------------------------
-# Argument check
+# Arg check
 # -----------------------------
 if [[ $# -ne 1 ]]; then
   echo "Usage: $0 <relative/path/to/test/folder>"
@@ -22,7 +22,7 @@ TDIR="$ROOT/$TARGET_REL"
 [[ -d "$TDIR" ]] || { echo "No such dir: $TDIR"; exit 1; }
 
 # -----------------------------
-# Pick test
+# Select test
 # -----------------------------
 pushd "$TDIR" > /dev/null
 TESTS=( $(go test -list . | grep '^Test') )

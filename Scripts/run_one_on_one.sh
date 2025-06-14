@@ -22,7 +22,7 @@ TDIR="$ROOT/$TARGET_REL"
 [[ -d "$TDIR" ]] || { echo "No such dir: $TDIR"; exit 1; }
 
 # -----------------------------
-# Pick test
+# Select test
 # -----------------------------
 pushd "$TDIR" > /dev/null
 TESTS=( $(go test -list . | grep '^Test') )
@@ -38,7 +38,7 @@ RDIR="$TDIR/results/$TEST/$MODE"
 mkdir -p "$RDIR"
 
 # -----------------------------
-# Run the single mode
+# Run single mode
 # -----------------------------
 echo ">>> $MODE for $TEST"
 "$ADVOCATE_BIN" fuzzing \

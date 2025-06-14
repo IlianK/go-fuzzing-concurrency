@@ -151,7 +151,7 @@ def generate_comparison(results_dir):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate enhanced comparison.csv")
+    parser = argparse.ArgumentParser(description="Generate comparison.csv")
     parser.add_argument("results_dir", help="Path to a single test's results folder")
     args = parser.parse_args()
 

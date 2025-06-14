@@ -1,2 +1,0 @@
-TestName,NoEvents,NoGoroutines,NoAtomicEvents,NoChannelEvents,NoSelectEvents,NoMutexEvents,NoWaitgroupEvents,NoCondVariablesEvents,NoOnceOperations
-TestCycleThreeLocks,8,3,0,0,0,6,0,0,0

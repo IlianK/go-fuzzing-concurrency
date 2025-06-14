@@ -1,2 +1,0 @@
-TestName,NoEvents,NoGoroutines,NoAtomicEvents,NoChannelEvents,NoSelectEvents,NoMutexEvents,NoWaitgroupEvents,NoCondVariablesEvents,NoOnceOperations
-TestA03_CloseOnClosed,4,1,0,2,0,0,0,0,0

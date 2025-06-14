@@ -5,7 +5,7 @@ set -euo pipefail
 # Config
 # -----------------------------
 ADVOCATE_BIN="./ADVOCATE/advocate/advocate"
-MODES=("GFuzz" "GoPie" "GoPie+")
+MODES=("GFuzz" "GFuzzHB" "Flow" "GFuzzHBFlow" "GoPie" "GoPie+" "GoPieHB")
 MAX_RUNS=100
 TIMEOUT=60
 
