@@ -181,6 +181,14 @@ Extends GoPie+ with HB analysis. This enables detection of theoretically possibl
 
 | **Note**: The fuzzing modes GFuzz, GoPie, and GoPie+ detect only bugs that result in observable effects, such as panics or goroutine leaks. They cannot detect silent or theoretical concurrency issues like scenarios A02, A07, or P01–P03, which require reasoning over happens-before relations. To detect these the analysis-based modes like Flow, GFuzzHB, GFuzzHBFlow, and GoPieHB should be used. which has HB-based detection logic.
 
+##### Error Classification System
+| Code  | Type             | Meaning                                             |
+| ----- | ---------------- | --------------------------------------------------- |
+| `Axx` | Actual bug/panic | Happened during execution                           |
+| `Rxx` | Runtime fatal    | Unexpected or forced termination (e.g., timeout)    |
+| `Pxx` | Potential bug    | Detected by HB analysis, didn’t occur yet           |
+| `Lxx` | Leak             | Operation blocked or left incomplete at program end |
+
 --- 
 
 #### Result artefacts

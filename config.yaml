@@ -1,0 +1,13 @@
+advocate_bin: "./ADVOCATE/advocate/advocate"
+modes:
+  - GFuzz
+  - GFuzzHB
+  - Flow
+  - GFuzzHBFlow
+  - GoPie
+  - GoPie+
+  - GoPieHB
+max_runs: 100
+timeout: 60
+record_time: true
+record_stats: true
