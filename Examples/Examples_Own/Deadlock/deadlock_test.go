@@ -1,7 +1,6 @@
 package deadlocks
 
 import (
-	"advocate"
 	"sync"
 	"testing"
 	"time"
@@ -9,10 +8,6 @@ import (
 
 // 1) Two‐lock inversion (classic two‐goroutine cycle)
 func TestCycleTwoLocks(t *testing.T) {
-	// ======= Preamble Start =======
-  advocate.InitReplay("rewrittenTrace_3", 60, true)
-  defer advocate.FinishReplay()
-  // ======= Preamble End =======
 	var a, b sync.Mutex
 
 	go func() {

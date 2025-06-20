@@ -1,0 +1,2 @@
+G,22,3,/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/WaitGroups/waitgroups_test.go:43
+W,40,40,1000000001,A,-1,1,/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/WaitGroups/waitgroups_test.go:42
