@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+
 # ------------------------------------------
 # Resolve paths 
 # ------------------------------------------
@@ -9,6 +10,7 @@ TARGET_REL="$1"
 CONFIG_PATH="$2"
 TDIR="$ROOT/$TARGET_REL"
 [[ -d "$TDIR" ]] || { echo "No such dir: $TDIR"; exit 1; }
+
 
 # ------------------------------------------
 # Load config
@@ -19,6 +21,7 @@ if [[ ! -f "$CONFIG_PATH" ]]; then
 fi
 eval "$(python3 "$ROOT/Scripts/config/load_config.py" "$CONFIG_PATH")"
 
+
 # -----------------------------
 # Select test case
 # -----------------------------
@@ -27,11 +30,13 @@ TESTS=( $(go test -list . | grep '^Test') )
 popd > /dev/null
 select TEST in "${TESTS[@]}"; do [[ -n "$TEST" ]] && break; done
 
+
 # -----------------------------
 # Prepare results folder
 # -----------------------------
 RDIR="$TDIR/results/$TEST"
 mkdir -p "$RDIR"
+
 
 # -----------------------------
 # Run ALL modes on ONE test
@@ -41,7 +46,7 @@ for M in "${MODES[@]}"; do
   MDIR="$RDIR/$M"
   mkdir -p "$MDIR"
   
-  # Prepare the common base of the command
+  # Prepare common base 
   CMD=(
     "$ADVOCATE_BIN" fuzzing
     -path "$TDIR"
@@ -54,7 +59,6 @@ for M in "${MODES[@]}"; do
     -timeoutRep "$TIMEOUT"
   )
   
-  # Conditionally add options if enabled in the config
   if [[ "$RECORD_TIME" == "true" ]]; then
     CMD+=(-time)
   fi
@@ -62,12 +66,13 @@ for M in "${MODES[@]}"; do
     CMD+=(-stats)
   fi
 
-  # Run the command
+  # Run 
   "${CMD[@]}" || echo "$M failed"
   
-  # Move results to the respective mode folder and clean up
+  # Move results 
   [[ -d "$TDIR/advocateResult" ]] && mv "$TDIR/advocateResult"/* "$MDIR"/ && rm -rf "$TDIR/advocateResult"
 done
+
 
 # -----------------------------
 # Aggregating log and stat files
@@ -77,3 +82,10 @@ python3 "$ROOT/Scripts/tools/aggregate_log_files.py" "$RDIR"
 python3 "$ROOT/Scripts/tools/aggregate_stat_files.py" "$RDIR"
 
 echo "Aggregation complete. Files are stored in: $RDIR/combined"
+
+
+# -----------------------------
+# Generate comparison CSV
+# -----------------------------
+echo "Generating comparison.csv..."
+python3 "$ROOT/Scripts/tools/compare_results.py" "$RDIR"

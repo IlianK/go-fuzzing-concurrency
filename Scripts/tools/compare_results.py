@@ -3,6 +3,10 @@ import csv
 import glob
 import os
 
+# Goes through each TestX folder under the results folder (TestA00, TestA01, etc.).
+# Accesses combined folder, where aggregated files (logs and stats) are stored.
+# Parse (log and stat) and generate a comparison.csv t
+
 def read_csv_row(path, row=1):
     with open(path, newline='') as f:
         reader = csv.reader(f)
@@ -11,9 +15,11 @@ def read_csv_row(path, row=1):
                 return r
     return []
 
+
 def find_file(pattern, directory):
     matches = glob.glob(os.path.join(directory, pattern))
     return matches[0] if matches else None
+
 
 def parse_unique_bugs(result_dir):
     file = find_file("statsAll_*.csv", result_dir)
@@ -25,12 +31,14 @@ def parse_unique_bugs(result_dir):
            if h.startswith("NoUniqueDetected") and int(v) > 0]
     return len(ids), ";".join(ids) if ids else None
 
+
 def parse_total_bugs(result_dir):
     file = find_file("statsAnalysis_*.csv", result_dir)
     if not file:
         return None
     row = read_csv_row(file, 1)
     return int(row[1])
+
 
 def parse_total_runs(result_dir):
     file = find_file("statsFuzzing_*.csv", result_dir)
@@ -39,12 +47,14 @@ def parse_total_runs(result_dir):
     row = read_csv_row(file, 1)
     return int(row[1])
 
+
 def parse_total_time(result_dir):
     file = find_file("times_total_*.csv", result_dir)
     if not file:
         return None
     row = read_csv_row(file, 1)
     return float(row[1]) if row[1] else None
+
 
 def parse_detail_times(result_dir):
     file = find_file("times_detail_*.csv", result_dir)
@@ -61,6 +71,7 @@ def parse_detail_times(result_dir):
                 rep = v
     return rec, ana, rep
 
+
 def parse_leaks_panics_replays(result_dir):
     file = find_file("statsAnalysis_*.csv", result_dir)
     if not file:
@@ -70,6 +81,7 @@ def parse_leaks_panics_replays(result_dir):
     panics = int(row[5])
     replays = int(row[6])
     return leaks, panics, replays
+
 
 def parse_bug_type_summary(result_dir):
     file = find_file("statsAll_*.csv", result_dir)
@@ -81,6 +93,7 @@ def parse_bug_type_summary(result_dir):
              if h.startswith("NoUniqueDetected") and int(v) > 0]
     return ";".join(types) if types else None
 
+
 def parse_replay_stats(result_dir):
     file = find_file("statsFuzzing_*.csv", result_dir)
     if not file:
@@ -91,11 +104,14 @@ def parse_replay_stats(result_dir):
     replay_successful = sum(int(v) for h, v in zip(hdr, row) if h.startswith("NoReplaySuccessful"))
     return replay_written, replay_successful
 
+
 def gather_modes(results_dir):
     return sorted([
         d for d in os.listdir(results_dir)
-        if os.path.isdir(os.path.join(results_dir, d))
+        if os.path.isdir(os.path.join(results_dir, d)) and d != 'combined'
     ])
+
+
 
 def generate_comparison(results_dir):
     modes = gather_modes(results_dir)
@@ -107,6 +123,7 @@ def generate_comparison(results_dir):
         "Bugs_per_1000_Runs", "Bugs_per_Minute", "Runs_per_Minute",
         "Replays_Written", "Replays_Successful"
     ]
+
 
     with open(out_path, "w", newline='') as outf:
         writer = csv.writer(outf)
@@ -137,6 +154,7 @@ def generate_comparison(results_dir):
 
     print(f"comparison.csv written to {out_path}")
 
+
 def main():
     parser = argparse.ArgumentParser(description="Generate comparison.csv")
     parser.add_argument("results_dir", help="Path to a single test's results folder")
@@ -147,6 +165,7 @@ def main():
         exit(1)
 
     generate_comparison(args.results_dir)
+
 
 if __name__ == "__main__":
     main()

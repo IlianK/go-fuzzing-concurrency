@@ -29,5 +29,5 @@ go version go1.24.1 linux/amd64 ADVOCATE
 Exit Replay with code  3 The program panicked unexpectedly
 Exit Message: panic: triggering unknown panic
 
-FAIL	scenarios	0.108s
+FAIL	scenarios	0.104s
 FAIL

@@ -16,7 +16,7 @@ testing.tRunner(0xc000003880, 0x585cc8)
 	/home/ilian/Tools/go-runtime/src/testing/testing.go:1792 +0xf4
 created by testing.(*T).Run in goroutine 1
 	/home/ilian/Tools/go-runtime/src/testing/testing.go:1851 +0x413
-FAIL	scenarios	0.007s
+FAIL	scenarios	0.004s
 FAIL
 FileName:  /home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/Scenarios/scenarios_test.go
 TestName:  TestA00_UnknownPanic
@@ -29,6 +29,6 @@ go version go1.24.1 linux/amd64 ADVOCATE
 Exit Replay with code  3 The program panicked unexpectedly
 Exit Message: panic: triggering unknown panic
 
-FAIL	scenarios	0.106s
+FAIL	scenarios	0.104s
 FAIL
 Bugreport info: 0_1,fail

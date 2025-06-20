@@ -1,15 +1,15 @@
 
-## Setup Advocate & Execute Samples
+# Setup Advocate & Execute Samples
 
-### Install Advocate
+## Install Advocate
 
-#### Prerequisites
+### Prerequisites
 - Linux OS or WSL
 - Go Version 1.24.1
 
 --- 
 
-#### Step 1: Update System
+### Step 1: Update System
 
 ```bash
 sudo apt update
@@ -18,7 +18,7 @@ sudo apt upgrade
 
 ---
 
-#### Step 2: Install Go 1.24.1
+### Step 2: Install Go 1.24.1
 ```bash
 cd ~/Downloads 
 curl -LO https://go.dev/dl/go1.24.1.linux-amd64.tar.gz
@@ -29,7 +29,7 @@ mv go ~/Tools/go-runtime
 
 ---
 
-#### Step 3: Set Go Environment
+### Step 3: Set Go Environment
 ```bash
 export GOROOT=$HOME/Tools/go-runtime
 export PATH=$GOROOT/bin:$PATH
@@ -38,7 +38,7 @@ source ~/.bashrc
 
 ---
 
-#### 4. Verify Version
+### 4. Verify Version
 ```bash
 go version  # go version go1.24.2 linux/amd64
 which go    # /home/USER/Tools/go-runtime/bin/go
@@ -46,7 +46,7 @@ which go    # /home/USER/Tools/go-runtime/bin/go
 
 ---
 
-#### 5. Clone & Build Advocate
+### 5. Clone & Build Advocate
 ```bash
 # Clone git
 git clone https://github.com/ErikKassubek/ADVOCATE.git
@@ -71,7 +71,7 @@ go build
 ---
 
 
-#### 6. Test Advocate Sample
+### 6. Test Advocate Sample
 Run in /ADVOCATE/advocate:
 ```bash
 ./advocate fuzzing \

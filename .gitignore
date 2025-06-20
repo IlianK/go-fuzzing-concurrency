@@ -3,6 +3,5 @@ Examples/Examples_AutSys/z_Other
 !Examples/Examples_Projects/**/results/
 !Examples/Examples_Projects/**/results/**
 Examples/Examples_Projects/**
-
-Docs/
+test.txt
 .vscode

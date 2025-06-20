@@ -1,0 +1,3 @@
+G,2,2,/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/Deadlock/deadlock_test.go:18
+M,4,8,1000000001,-,L,t,/home/ilian/Projects/Go_Fuzzing_Concurrency/Examples/Examples_Own/Deadlock/deadlock_test.go:26
+X,23,41

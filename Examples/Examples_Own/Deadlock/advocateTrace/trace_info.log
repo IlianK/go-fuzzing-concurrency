@@ -1,0 +1,7 @@
+ExitCode!10
+ExitPosition!/home/ilian/Projects/Go_Fuzzing_Concurrency/ADVOCATE/go-patch/src/advocate/advocate_tracing.go:73
+ReplayTimeout!0
+ReplayDisabled!0
+ReplayAck!0
+NumberRoutines!2
+Runtime!60
