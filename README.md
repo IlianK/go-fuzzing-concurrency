@@ -100,29 +100,129 @@ And the metrics extracted from the artefacts and used for comparison are explain
 ### Examples_Simple
 This directory contains simple Go programs that include common concurrency bugs, to test Advocate's detection of specific issues. 
 They cover tests related to ...:
-- `/Channel`:
-- `/Deadlock`:
-- `/Select`:
-- `/WaitGroup`:
-- `/Scenarios`:
-
-
-##### Modes Performance
-[TABLE]
-
-##### Modes Precision
-[TABLE]
+- [`Channel`](/Examples/Examples_Simple/Channel/channel.md)
+- [`Deadlock`](/Examples/Examples_Simple/Deadlock/deadlock.md)
+- [`Select`](/Examples/Examples_Simple/SelectBlock/select.md)
+- [`WaitGroups`](/Examples/Examples_Simple/WaitGroups/waitgroups.md)
+- [`Scenarios`](/Examples/Examples_Simple/Scenarios/scenarios.md)
 
 ---
 
 ### Examples_Projects
-This directory contains cloned real-world Go projects, such as Docker Compose, Caddy, etcd, Gin, and Kubernetes. The goal is to apply Advocate's analysis and fuzzing capabilities to bigger Go projects to uncover their potential concurrency issues in production-grade codebases.
+This directory contains cloned real-world Go projects. The goal is to apply Advocate's analysis and fuzzing capabilities to bigger Go projects to uncover their potential concurrency issues in production-grade codebases.
 
-##### Modes Performance
-[TABLE]
-
-##### Modes Precision
-[TABLE]
-
+- [`caddy`](/Examples/Examples_Projects_Results/caddy-master/)
+- [`gin`](/Examples/Examples_Projects_Results/gin-master/)
+- [`cobra`](/Examples/Examples_Projects_Results/cobra-main/)
 
 ---
+
+### Quick Start
+
+#### Run
+To execute automated fuzzing tests, use the `run.sh` script with the path to a target project directory. Fuzzing configuration is specified in `config.yaml`.
+
+```bash
+./run.sh Examples/Examples_Simple/Channel/
+```
+
+You will be prompted to select the automation mode. For options 1 and 2, all fuzzing modes listed in config.yaml will be executed.
+
+```
+========== Advocate Fuzzing Runner ==========
+Select mode:
+  1) Run ALL modes on ALL test cases
+  2) Run ALL modes on ONE selected test case
+  3) Run ONE selected mode on ALL test cases
+  4) Run ONE selected mode on ONE selected test case
+  5) Exit
+Choice [1-5]: 
+```
+
+For options 3 and 4, you can select a specific fuzzing mode:
+
+```bash
+Select fuzz mode:
+1) GFuzz
+2) GFuzzHB
+3) Flow
+4) GFuzzHBFlow
+5) GoPie
+6) GoPie+
+7) GoPieHB
+#? 
+```
+
+For options 2 and 4, an additional prompt will let you choose which test to run. Option 2 runs all modes on the selected test.
+Option 4 runs the selected mode on the selected test.
+
+**Example**: Found tests within `Examples/Examples_Simple/Channel/`
+```bash
+1) TestBufferedFillNoRead
+2) TestBufferedDrainSlow
+3) TestUnbufferedSendRecv
+4) TestUnbufferedLeakNoRecv
+5) TestUnbufferedRecvNoSend
+#? 
+```
+
+
+
+#### Results
+In all cases a `/results` directory is created within the directory given as argument to the `run.sh`.
+
+Each test case (e.g., `TestBufferedFillNoRead`) gets its own subfolder under `/results/`. Inside that, results for each fuzzing mode (e.g., `GFuzz`, `GoPie+`) are stored in separate subdirectories named after the mode.
+
+If you selected **option 1** (all tests, all modes) or **option 2** (one test, all modes), a `combined/` folder and a `comparison.csv` are generated inside the test's results folder. These allow comparing all modes for that test using defined metrics.
+
+For a full explanation of the metrics, see [`/Docs/Metrics.md`](Docs/Metrics.md).
+
+
+**Example:**
+```
+Channel/
+├── results/
+│ └── TestBufferedFillNoRead/
+│ 	├── combined/
+│ 	├── GFuzz/
+│ 	├── GFuzzHB/
+│ 	├── GFuzzHBFlow/
+│ 	├── GoPie/
+│ 	├── GoPie+/
+│ 	├── GoPieHB/
+│ 	└── comparison.csv
+| └── TestBufferedDrainSlow/
+│ 	├── combined/
+│ 	├── GFuzz/
+|   ├── ...
+```
+
+#### Comparing Specific Metrics
+
+While each test's `comparison.csv` and `combined/` directory summarize all modes **for that test only**, you can generate **cross-test comparisons** of specific metrics using the script `compare_tests_pviot.py`:
+
+```bash
+python3 Scripts/tools/compare_tests_pviot.py Examples/Examples_Simple/Channel/results/
+```
+
+This script scans all test result folders under a given `results/` directory and builds a **pivot table** comparing one metric across all tests and modes.
+
+
+You will be prompted to select a metric:
+
+```bash
+Available metrics to compare:
+1) Total_Time_s
+2) Rec_s
+3) Ana_s
+4) Rep_s
+5) Runs_per_Minute
+6) Unique_Bugs
+7) Total_Bugs
+8) Bug_Types
+9) Bugs_per_1000_Runs
+10) Bugs_per_Minute
+Select a metric by number: 
+```
+
+The result is a `comparison_pivot_[METRIC].csv` which is saved directly under the `/results/` directory you provided. This file lets you easily compare the selected metric across all tests and modes in tabular form.
