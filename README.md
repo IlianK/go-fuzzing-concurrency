@@ -64,15 +64,16 @@ Main          |        Go 1         |          Go 2
               |                     | Lock mu1
 ```
 
-This is where concurrency analysis tools like GFuzz, GoPie and as per latest development ADVOCATE come into play. More information on the three analysis tools are explained in `Docs/Tools.md`.
+This is where concurrency analysis tools like GFuzz, GoPie and as per latest development ADVOCATE come into play. More information on the three analysis tools are explained in [`/Docs/Tools.md`](Docs/Tools.md).
 
 
 ---
 
 ## Project Overview
-The goal of this project is to evaluate and compare the fuzzing modes of the Advocate Go tool in terms of performance and efficiency in detecting concurrency-related bugs. It also aims to analyze overlaps and distinctions in bug detection across modes, identifying whether specific bugs are more efficeintly exposed by certain modes. For example, while GFuzz, GoPie, and GoPie+ can all detect select-related bugs, Advocate's GFuzz mode is expected to perform more efficiently in these cases. 
+The goal of this project is to evaluate and compare the fuzzing modes of the Advocate Go tool in terms of performance and efficiency in detecting concurrency-related bugs. It also aims to analyze overlaps and distinctions in bug detection across modes, identifying whether specific bugs are more efficeintly exposed by certain modes. 
 
-The project structure is as follows:
+For example, while GFuzz, GoPie, and GoPie+ can all detect select-related bugs, Advocate's GFuzz mode is expected to perform more efficiently in these cases. 
+
 
 ```bash
 ├── ADVOCATE            # Cloned ADVOCATE
@@ -82,8 +83,7 @@ The project structure is as follows:
 │ ├── Tools.md				# Functionality of GFuzz, GoPie, Advocate    
 │ └── Setup.md   			# Verify prerequisites
 ├── Examples				
-│ ├── Examples_Own      
-│ ├── Examples_AutSys       
+│ ├── Examples_Simple      
 │ └── Examples_Projects     
 ├── Scripts               	# Automation scripts
 ├── run.sh					# Run automation scripts
@@ -92,50 +92,19 @@ The project structure is as follows:
 ```
 
 
-The scripts used to automate fuzzing test cases and comparing the artefacts are explained in `Docs/Scripts.md`. And the metrics extracted from the artefacts and used for comparison are explained in `Docs/Metrics.md`.
+The scripts used to automate fuzzing test cases and comparing the artefacts are explained in [`/Docs/Scripts.md`](Docs/Scripts.md). 
+And the metrics extracted from the artefacts and used for comparison are explained in [`/Docs/Metrics.md`](Docs/Metrics.md).
 
 ---
 
-### Examples_Own
-This directory contains simple Go programs that include common concurrency bugs, to test Advocate's detection of specific issues. They cover tests related to ...:
-
-#### Channel
-#### Deadlock
-#### Select
-#### WaitGroup
-
-
-
-#### Scenarios
-
-The `Scenarios` directory contains test cases to cover each scenario Advocate is able to cover via analysis. 
-
-##### Modes Detection Scope
-
-| **Test Function**                    | **Description**                                | **GFuzz** | **GoPie (incl. +)** | **HB-Based Modes** |
-| ------------------------------------ | ---------------------------------------------- | :-------: | :-----------------: | :----------------: |
-| `TestA00_UnknownPanic`               | Explicit `panic(...)`                          |     ✓     |          ✓          |          ✓         |
-| `TestA01_SendOnClosed`               | Send on a closed channel → runtime panic       |     ✓     |          ✓          |          ✓         |
-| `TestA02_ReceiveOnClosed`            | Receive from closed channel returns zero       |           |                     |          ✓         |
-| `TestA03_CloseOnClosed`              | Closing a channel twice → runtime panic        |     ✓     |          ✓          |          ✓         |
-| `TestA04_CloseOnNil`                 | Closing a nil channel → runtime panic          |     ✓     |          ✓          |          ✓         |
-| `TestA05_NegativeWaitGroup`          | Too many `wg.Done()` calls → runtime panic     |     ✓     |          ✓          |          ✓         |
-| `TestA06_UnlockUnlocked`             | Unlocking an unlocked mutex → runtime panic    |     ✓     |          ✓          |          ✓         |
-| `TestA07_ConcurrentRecv`             | Two concurrent `<-ch` ops, no panic or hang    |           |                     |          ✓         |
-| `TestP01_PossibleSendOnClosed`       | Racing `ch <-` vs. `close(ch)` (no panic)      |           |                     |          ✓         |
-| `TestP02_PossibleRecvOnClosed`       | Racing receives after close (no panic)         |           |                     |          ✓         |
-| `TestP03_PossibleNegativeWaitGroup`  | Two `Done()` in goroutine (no panic)           |           |                     |          ✓         |
-| `TestL00_UnknownLeak`                | Goroutine blocks on unclosed channel           |     ✓     |          ✓          |          ✓         |
-| `TestL01_UnbufferedLeakWithPartner`  | Send paired later by goroutine → leak at exit  |     ✓     |          ✓          |          ✓         |
-| `TestL02_UnbufferedLeakNoPartner`    | Send on unbuffered channel with no receiver    |     ✓     |          ✓          |          ✓         |
-| `TestL03_BufferedLeakWithPartner`    | Buffered send consumed too late → leak at exit |     ✓     |          ✓          |          ✓         |
-| `TestL04_BufferedLeakNoPartner`      | Send on full buffered channel with no reader   |     ✓     |          ✓          |          ✓         |
-| `TestL05_LeakOnNilChan`              | Send on nil channel → blocks forever           |     ✓     |          ✓          |          ✓         |
-| `TestL06_LeakOnSelectWithPartner`    | Select waiting on channel, matched later       |     ✓     |          ✓          |          ✓         |
-| `TestL07_LeakOnSelectWithoutPartner` | Select on nil channel, fallback via timeout    |     ✓     |          ✓          |          ✓         |
-| `TestL08_LeakOnMutex`                | `mu.Lock()` blocks, `Unlock()` delayed         |     ✓     |          ✓          |          ✓         |
-| `TestL09_LeakOnWaitGroup`            | `wg.Wait()` never unblocks                     |     ✓     |          ✓          |          ✓         |
-| `TestL10_LeakOnCond`                 | `cond.Wait()` without `Signal()`               |     ✓     |          ✓          |          ✓         |
+### Examples_Simple
+This directory contains simple Go programs that include common concurrency bugs, to test Advocate's detection of specific issues. 
+They cover tests related to ...:
+- `/Channel`:
+- `/Deadlock`:
+- `/Select`:
+- `/WaitGroup`:
+- `/Scenarios`:
 
 
 ##### Modes Performance
@@ -157,7 +126,3 @@ This directory contains cloned real-world Go projects, such as Docker Compose, C
 
 
 ---
-
-### Examples_AutSys
-This directory contains examples sourced from the course [Autonomous Systems](https://sulzmann.github.io/AutonomeSysteme/) by Prof. Dr. Martin Sulzmann. These examples are educational in nature and cover various aspects of concurrent programming in Go, including deadlock analysis and concurrency models:
-

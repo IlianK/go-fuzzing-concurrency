@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+
 # ------------------------------------------
 # Resolve paths
 # ------------------------------------------
@@ -12,6 +13,7 @@ TEST="$4"
 TDIR="$ROOT/$TARGET_REL"
 [[ -d "$TDIR" ]] || { echo "No such dir: $TDIR"; exit 1; }
 
+
 # ------------------------------------------
 # Load config
 # ------------------------------------------
@@ -21,11 +23,13 @@ if [[ ! -f "$CONFIG_PATH" ]]; then
 fi
 eval "$(python3 "$ROOT/Scripts/config/load_config.py" "$CONFIG_PATH")"
 
+
 # -----------------------------
 # Prepare result folder for the test and mode
 # -----------------------------
 RDIR="$TDIR/results/$TEST/$MODE"
 mkdir -p "$RDIR"
+
 
 # Prepare the common base of the command
 CMD=(
@@ -40,6 +44,7 @@ CMD=(
   -timeoutRep "$TIMEOUT"
 )
 
+
 # Conditionally add options if enabled in the config
 if [[ "$RECORD_TIME" == "true" ]]; then
   CMD+=(-time)
@@ -48,8 +53,10 @@ if [[ "$RECORD_STATS" == "true" ]]; then
   CMD+=(-stats)
 fi
 
+
 # Run the command
 "${CMD[@]}" || echo "$TEST / $MODE failed"
+
 
 # -----------------------------
 # Move advocateResult to the respective mode folder and clean up

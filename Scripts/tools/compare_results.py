@@ -1,11 +1,13 @@
+# Goes through each TestX folder under the results folder (TestA00, TestA01, etc.).
+# Accesses combined folder, where aggregated files (logs and stats) are stored.
+# Parse (log and stat) and generate a comparison.csv t
+
+
 import argparse
 import csv
 import glob
 import os
 
-# Goes through each TestX folder under the results folder (TestA00, TestA01, etc.).
-# Accesses combined folder, where aggregated files (logs and stats) are stored.
-# Parse (log and stat) and generate a comparison.csv t
 
 def read_csv_row(path, row=1):
     with open(path, newline='') as f:

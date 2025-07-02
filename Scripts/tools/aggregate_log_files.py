@@ -1,8 +1,8 @@
 import os
 import sys
 
-# Get the target directory path as an argument
-TARGET_DIR = sys.argv[1]  # This will be passed as the TARGET_REL in the run.sh
+# Get the target dir
+TARGET_DIR = sys.argv[1]  
 
 # Configuration
 MODES = ["GFuzz", "GFuzzHB", "Flow", "GFuzzHBFlow", "GoPie", "GoPie+", "GoPieHB"]
@@ -15,11 +15,11 @@ LOG_FILES = [
     "total_results_readable.log"
 ]
 
-# Create combined directory inside the target directory with subdirectories for logs and stats
+# Create combined dir 
 combined_dir = os.path.join(TARGET_DIR, "combined")
 os.makedirs(combined_dir, exist_ok=True)
 
-# Create logs subdirectory for log files aggregation
+# Create logs dir
 logs_dir = os.path.join(combined_dir, "logs")
 os.makedirs(logs_dir, exist_ok=True)
 
@@ -31,6 +31,7 @@ for log_name in LOG_FILES:
             mode_dir = os.path.join(TARGET_DIR, mode)
             if not os.path.isdir(mode_dir):
                 continue
+            
             # Search for the subdirs (e.g., file(1)-test(1)-...)
             subdirs = [d for d in os.listdir(mode_dir) if os.path.isdir(os.path.join(mode_dir, d))]
             for sub in subdirs:

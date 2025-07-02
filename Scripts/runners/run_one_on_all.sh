@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+
 # ------------------------------------------
 # Resolve paths
 # ------------------------------------------
@@ -11,6 +12,7 @@ MODE="$3"
 TDIR="$ROOT/$TARGET_REL"
 [[ -d "$TDIR" ]] || { echo "No such dir: $TDIR"; exit 1; }
 
+
 # ------------------------------------------
 # Load config
 # ------------------------------------------
@@ -20,12 +22,14 @@ if [[ ! -f "$CONFIG_PATH" ]]; then
 fi
 eval "$(python3 "$ROOT/Scripts/config/load_config.py" "$CONFIG_PATH")"
 
+
 # -----------------------------
 # Gather test cases
 # -----------------------------
 pushd "$TDIR" > /dev/null
 TESTS=( $(go test -list . | grep '^Test') )
 popd > /dev/null
+
 
 # -----------------------------
 # Loop through each test and mode
@@ -34,9 +38,11 @@ for TEST in "${TESTS[@]}"; do
   echo "### Test: $TEST"
   echo ">>> Mode: $MODE"
 
+
   # Prepare result folder for each mode and test
   RDIR="$TDIR/results/$TEST/$MODE"
   mkdir -p "$RDIR"
+
 
   # Prepare the common base of the command
   CMD=(
@@ -51,6 +57,7 @@ for TEST in "${TESTS[@]}"; do
     -timeoutRep "$TIMEOUT"
   )
 
+
   # Conditionally add options if enabled in the config
   if [[ "$RECORD_TIME" == "true" ]]; then
     CMD+=(-time)
@@ -59,8 +66,10 @@ for TEST in "${TESTS[@]}"; do
     CMD+=(-stats)
   fi
 
+
   # Run the command
   "${CMD[@]}" || echo "$TEST / $MODE failed"
+
 
   # Move results to the respective mode folder and clean up
   [[ -d "$TDIR/advocateResult" ]] && mv "$TDIR/advocateResult"/* "$RDIR"/ && rm -rf "$TDIR/advocateResult"

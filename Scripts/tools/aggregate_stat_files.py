@@ -3,20 +3,21 @@ import sys
 import csv
 import glob
 
+
 def find_stat_files(test_dir, stat_prefix):
-    """Find all stat files for a given prefix in subdirectories (modes)."""
     pattern = os.path.join(test_dir, "*", f"{stat_prefix}_*.csv")
     return sorted(glob.glob(pattern))
 
+
 def extract_mode_from_path(path):
-    """Extract the mode name (folder name) from file path."""
     return os.path.basename(os.path.dirname(path))
+
 
 def aggregate_stats(test_dir):
     combined_dir = os.path.join(test_dir, "combined")
     os.makedirs(combined_dir, exist_ok=True)
 
-    # Create stats subdirectory for stat files aggregation
+    # Stats subdir for stat files aggregation
     stats_dir = os.path.join(combined_dir, "stats")
     os.makedirs(stats_dir, exist_ok=True)
 
@@ -50,6 +51,7 @@ def aggregate_stats(test_dir):
                         writer.writerow([mode] + row)
 
     print(f"Aggregated stat files written to: {stats_dir}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
