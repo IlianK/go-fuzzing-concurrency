@@ -84,7 +84,7 @@ For example, while GFuzz, GoPie, and GoPie+ can all detect select-related bugs, 
 │ └── Setup.md   			# Verify prerequisites
 ├── Examples				
 │ ├── Examples_Simple      
-│ └── Examples_Projects     
+│ ├── Examples_Projects      
 ├── Scripts               	# Automation scripts
 ├── run.sh					# Run automation scripts
 ├── config.yaml				# Config for run.sh
@@ -99,16 +99,18 @@ And the metrics extracted from the artefacts and used for comparison are explain
 
 ### Examples_Simple
 This directory contains simple Go programs that include common concurrency bugs, to test Advocate's detection of specific issues. 
-They cover tests related to ...:
+They cover tests related to:
 - [`Channel`](/Examples/Examples_Simple/Channel/channel.md)
 - [`Deadlock`](/Examples/Examples_Simple/Deadlock/deadlock.md)
 - [`Select`](/Examples/Examples_Simple/SelectBlock/select.md)
 - [`WaitGroups`](/Examples/Examples_Simple/WaitGroups/waitgroups.md)
 - [`Scenarios`](/Examples/Examples_Simple/Scenarios/scenarios.md)
 
+The specific test cases are each described in the respective document, containing the comparison regarding time and detected bugs across all modes and all tests. 
+
 ---
 
-### Examples_Projects
+### Examples_Projects_Results
 This directory contains cloned real-world Go projects. The goal is to apply Advocate's analysis and fuzzing capabilities to bigger Go projects to uncover their potential concurrency issues in production-grade codebases.
 
 - [`caddy`](/Examples/Examples_Projects_Results/caddy-master/)
@@ -126,7 +128,7 @@ To execute automated fuzzing tests, use the `run.sh` script with the path to a t
 ./run.sh Examples/Examples_Simple/Channel/
 ```
 
-You will be prompted to select the automation mode. For options 1 and 2, all fuzzing modes listed in config.yaml will be executed.
+You will be prompted to select the automation mode. For options 1 and 2, all fuzzing modes listed in the config will be executed.
 
 ```
 ========== Advocate Fuzzing Runner ==========

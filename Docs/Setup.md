@@ -1,5 +1,10 @@
+# Setup Advocate & Run Samples
 
-# Setup Advocate & Execute Samples
+This guide walks you through installing, building, and running a basic test with Advocate.  
+It ensures your setup is working correctly before executing automated fuzzing workflows.
+
+For further information see: [How To Use Advocate](https://github.com/ErikKassubek/ADVOCATE/blob/main/doc/usage.md)
+
 
 ## Install Advocate
 
