@@ -113,9 +113,12 @@ The specific test cases are each described in the respective document, containin
 ### Examples_Projects_Results
 This directory contains cloned real-world Go projects. The goal is to apply Advocate's analysis and fuzzing capabilities to bigger Go projects to uncover their potential concurrency issues in production-grade codebases.
 
-- [`caddy`](/Examples/Examples_Projects_Results/caddy-master/)
-- [`gin`](/Examples/Examples_Projects_Results/gin-master/)
-- [`cobra`](/Examples/Examples_Projects_Results/cobra-main/)
+| Project | Bug Types CSV | Total Time CSV |
+|---------|----------------|----------------|
+| [`caddy`](/Examples/Examples_Projects_Results/caddy-master/) | [Bug_Types](/Examples/Examples_Projects_Results/caddy-master/comparison_pivot_Bug_Types.csv) | [Time](/Examples/Examples_Projects_Results/caddy-master/comparison_pivot_Total_Time_s.csv) |
+| [`gin`](/Examples/Examples_Projects_Results/gin-master/)     | [Bug_Types](/Examples/Examples_Projects_Results/gin-master/comparison_pivot_Bug_Types.csv)   | [Time](/Examples/Examples_Projects_Results/gin-master/comparison_pivot_Total_Time_s.csv)   |
+| [`cobra`](/Examples/Examples_Projects_Results/cobra-main/)   | [Bug_Types](/Examples/Examples_Projects_Results/cobra-main/comparison_pivot_Bug_Types.csv)   | [Time](/Examples/Examples_Projects_Results/cobra-main/comparison_pivot_Total_Time_s.csv)   |
+
 
 ---
 
