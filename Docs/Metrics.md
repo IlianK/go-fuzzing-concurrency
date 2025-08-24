@@ -1,163 +1,122 @@
-# Metrics Explanation
+# Metrics Overview
 
-The following are the metrics extracted and used for comparison from log and stats files during the fuzzing process to provide insights into performance, reliability, and issues encountered during testing.
-
-
-## 1. Total Bugs
-
-This metric captures the total number of bugs detected during the fuzzing process. These bugs are categorized into various types such as atomic, panics, etc. The `Total_Bugs` metric helps to understand how many issues were encountered across all modes of fuzzing.
-
-**Source:**
-- **Stats File:** `statsAnalysis_*.csv`
+This describes the **metrics** extracted from the Advocate results during fuzzing runs, where they originate from, and what they represent. These metrics are compiled into `comparison.csv` by `compare_one_by_all.py` and used for cross-test analysis by `compare_all_by_one.py`.
 
 ---
 
-## 2. Leak Detection
-
-Leak detection identifies any memory or resource leaks that were detected during fuzzing. It is important for ensuring that the system does not leave resources unfreed, which could cause performance degradation or crashes over time.
-
-**Source:**
-- **Stats File:** `statsAnalysis_*.csv`
-- **Metric Names:** `NoLeaksTotal`, `NoLeaksWithRewriteTotal`, etc.
+## 1. Unique_Bugs
+The number of unique bugs detected during fuzzing. 
+To indicate how many distinct bugs were found across all fuzzing runs for a given mode. 
+Extracted from `statsAll_*.csv`, specifically columns beginning with `NoUniqueDetected*`.
 
 ---
 
-## 3. Panic Stats
-
-Panics are unexpected errors that lead to program crashes. Tracking panics during fuzzing is important to identify areas where the system is vulnerable to unexpected crashes.
-
-**Source:**
-- **Stats File:** `statsAnalysis_*.csv`
-- **Metric Names:** `NoPanicsTotal`, `NoPanicsVerifiedViaReplayTotal`, etc.
+## 2. Bug_Types
+A semicolon-separated list of bug types that were detected. Shows the types of unique bugs, such as deadlocks, data races, or specific concurrency errors.
+Extracted from `statsAll_*.csv`, column headers starting with `NoUniqueDetected`.
 
 ---
 
-## 4. Replay Information
-
-Replay information tracks how many times specific events were successfully or unsuccessfully replayed during the fuzzing process. This is important for reproducing bugs and verifying the correctness of the fuzzing results.
-
-**Source:**
-- **Stats File:** `statsFuzzing_*.csv`
-- **Metric Names:** `NoReplayWritten`, `NoReplaySuccessful`
+## 3. Total_Bugs
+The total number of bugs (unique or repeated) encountered. 
+Overall count of all bug occurrences across fuzzing runs.
+Extracted from `statsAnalysis_*.csv`, second column (`TotalBugs`).
 
 ---
 
-## 5. No. of Detected Bugs
-
-This refers to the number of detected bugs categorized into different classes like atomic operations, panics, and leaks. This shows how many issues were encountered and whether they were unique to the execution.
-
-**Source:**
-- **Stats File:** `statsAll_*.csv`
-- **Metric Names:** `NoTotalDetectedA01`, `NoTotalDetectedP01`, etc.
+## 4. Panics
+Number of test executions that resulted in a runtime panic.
+Indicates test executions that crashed due to unexpected runtime errors.
+Extracted from `statsAnalysis_*.csv`, column `Panics`.
 
 ---
 
-## 6. Unique Bugs
-
-Unique bugs refer to the distinct bugs encountered during the fuzzing run. These metrics help in identifying the novel issues that were uncovered.
-
-**Source:**
-- **Stats File:** `statsAll_*.csv`
-- **Metric Names:** `NoUniqueDetectedA01`, `NoUniqueDetectedP01`, etc.
+## 5. Leaks
+Number of concurrency-related resource leaks detected (e.g., goroutine leaks).
+Helps identify tests where resources are not properly released.
+Extracted from `statsAnalysis_*.csv`, column `Leaks`.
 
 ---
 
-## 7. Leaks and Panics
-
-Leaks and panics are extracted to understand critical issues in the system. Leaks refer to resources that were not released, and panics represent system crashes that need attention.
-
-**Source:**
-- **Stats File:** `statsAnalysis_*.csv`
-- **Metric Names:** `NoLeaksTotal`, `NoPanicsTotal`
+## 6. Confirmed_Replays
+Number of confirmed bug replays that succeeded.
+Ensures that detected bugs are reproducible and not false positives.
+Extracted from `statsAnalysis_*.csv`, column `ConfirmedReplays`.
 
 ---
 
-## 8. Replay Stats
-
-Replay stats are related to the success or failure of replaying previously detected issues. This metric is essential for verifying the reproducibility of bugs.
-
-**Source:**
-- **Stats File:** `statsFuzzing_*.csv`
-- **Metric Names:** `NoReplayWritten`, `NoReplaySuccessful`
+## 7. Total_Runs
+Total number of fuzzing runs executed for the test.
+Indicates test coverage and the amount of fuzzing effort applied.
+Extracted from `statsFuzzing_*.csv`, second column (`TotalRuns`).
 
 ---
 
-## 9. Run Stats
-
-Run stats provide details about the number of times the test was executed, helping to understand the testing duration and the total number of executions.
-
-**Source:**
-- **Stats File:** `statsFuzzing_*.csv`
-- **Metric Names:** `NoRuns`
+## 8. Total_Time_s
+Total execution time in seconds for the entire fuzzing run.
+Measures total time cost for fuzzing this test in the given mode.
+Extracted from `times_total_*.csv`, second column (`TotalTime`).
 
 ---
 
-## 10. Recording Time
-
-The recording time metric measures the time spent on recording events during the fuzzing process.
-
-**Source:**
-- **Stats File:** `times_detail_*.csv`
-- **Metric Names:** `Recording`
+## 9. Rec_s
+Recording phase time in seconds.
+Duration spent in the trace-recording phase of the fuzzing workflow.
+Extracted from `times_detail_*.csv`, column `Recording`.
 
 ---
 
-## 11. Analysis Time
-
-Analysis time represents the duration spent in analyzing the fuzzing results during the test run. It helps in understanding how long it takes to perform in-depth analysis after fuzzing.
-
-**Source:**
-- **Stats File:** `times_detail_*.csv`
-- **Metric Names:** `Analysis`
+## 10. Ana_s
+Analysis phase time in seconds.
+Duration spent analyzing recorded execution traces for errors.
+Extracted from `times_detail_*.csv`, column `Analysis`.
 
 ---
 
-## 12. Replay Time
-
-Replay time measures the duration spent on replaying any previously recorded or detected issues to verify the results.
-
-**Source:**
-- **Stats File:** `times_detail_*.csv`
-- **Metric Names:** `Replay`
+## 11. Rep_s
+Replay phase time in seconds.
+Extracted from `times_detail_*.csv`, column `Replay`.
+Duration spent replaying identified issues to confirm correctness.
 
 ---
 
-## 13. Run Time
-
-The total time spent running the fuzzing test, how much time was invested in running tests.
-
-**Source:**
-- **Stats File:** `times_total_*.csv`
-- **Metric Names:** `Time`
+## 12. Bugs_per_1000_Runs
+Number of bugs per 1000 fuzzing runs.
+Derived metric computed as `(Total_Bugs / Total_Runs) * 1000`.
+Normalizes bug discovery by test effort, enabling fair comparison across different run counts.
 
 ---
 
-## 14. Replays
-
-This metric tracks the total number of replays that were performed during the fuzzing process. Replays are important for ensuring that bugs can be reproduced in future runs.
-
-**Source:**
-- **Stats File:** `statsAnalysis_*.csv`
-- **Metric Names:** `NoReplayWritten`, `NoReplaySuccessful`
+## 13. Bugs_per_Minute
+Number of bugs found per minute of fuzzing.
+Indicates efficiency of the fuzzing process in finding bugs over time.
+Derived metric computed as `Total_Bugs / (Total_Time_s / 60)`.
 
 ---
 
-## 15. Execution Time per Mode
-
-This metric provides the execution time for each mode in the fuzzing process. It is useful for comparing the performance of different fuzzing strategies (e.g., GoPie, Flow, etc.).
-
-**Source:**
-- **Stats File:** `times_total_*.csv`
-- **Metric Names:** `Time`
+## 14. Runs_per_Minute
+Number of fuzzing runs executed per minute.
+Derived metric computed as `Total_Runs / (Total_Time_s / 60)`.
+Measures execution throughput (performance) of the fuzzing process.
 
 ---
 
-### Usage of Comparison Data
+## 15. Replays_Written
+Number of replay traces generated for debugging.
+Extracted from `statsFuzzing_*.csv`, summing all columns starting with `NoReplayWritten`.
+Indicates how many bug-inducing traces were successfully recorded.
 
-The comparison data in the `comparison.csv` file can be used to:
+---
 
-- Identify modes that produce highest number of bugs
-- Compare efficiency of fuzzing modes based on number of runs, bugs, and time.
-- Identify patterns between different modes in terms of resource usage, leaks, panics, and replays.
-- Analyze bug types, leaks, and panics to improve the testing process and reduce vulnerabilities.
+## 16. Replays_Successful
+Number of replay traces that were successfully reproduced.
+Confirms how many of the written replays actually reproduced the bug, validating bug accuracy.
+Extracted from `statsFuzzing_*.csv`, summing all columns starting with `NoReplaySuccessful`.
 
+---
+
+## Metric Categories
+- **Precision Metrics**: `Unique_Bugs`, `Bug_Types`, `Total_Bugs`, `Panics`, `Leaks`, `Confirmed_Replays`, `Replays_Written`, `Replays_Successful`.
+- **Performance Metrics**: `Total_Runs`, `Total_Time_s`, `Rec_s`, `Ana_s`, `Rep_s`, `Bugs_per_1000_Runs`, `Bugs_per_Minute`, `Runs_per_Minute`.
+
+These metrics provide both **effectiveness (how many bugs were found)** and **efficiency (how fast and reliably bugs were discovered)** for each fuzzing mode and test case.

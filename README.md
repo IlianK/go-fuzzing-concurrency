@@ -86,8 +86,8 @@ For example, while GFuzz, GoPie, and GoPie+ can all detect select-related bugs, 
 │ ├── Examples_Simple      
 │ ├── Examples_Projects      
 ├── Scripts               	# Automation scripts
-├── run.sh					# Run automation scripts
-├── config.yaml				# Config for run.sh
+├── run.py					# Run automated tests
+├── config.yaml				# Config for run.py
 └── README.md
 ```
 
@@ -100,24 +100,24 @@ And the metrics extracted from the artefacts and used for comparison are explain
 ### Examples_Simple
 This directory contains simple Go programs that include common concurrency bugs, to test Advocate's detection of specific issues. 
 They cover tests related to:
-- [`Channel`](/Examples/Examples_Simple/Channel/channel.md)
-- [`Deadlock`](/Examples/Examples_Simple/Deadlock/deadlock.md)
-- [`Select`](/Examples/Examples_Simple/SelectBlock/select.md)
-- [`WaitGroups`](/Examples/Examples_Simple/WaitGroups/waitgroups.md)
-- [`Scenarios`](/Examples/Examples_Simple/Scenarios/scenarios.md)
+- [`Channel`](Examples/Examples_Simple/Channel/channel.md)
+- [`Deadlock`](Examples/Examples_Simple/Deadlock/deadlock.md)
+- [`Select`](Examples/Examples_Simple/SelectBlock/select.md)
+- [`WaitGroups`](Examples/Examples_Simple/WaitGroups/waitgroups.md)
+- [`Scenarios`](Examples/Examples_Simple/Scenarios/scenarios.md)
 
 The specific test cases are each described in the respective document, containing the comparison regarding time and detected bugs across all modes and all tests. 
 
 ---
 
 ### Examples_Projects_Results
-This directory contains cloned real-world Go projects. The goal is to apply Advocate's analysis and fuzzing capabilities to bigger Go projects to uncover their potential concurrency issues in production-grade codebases.
+This directory contains cloned real-world Go projects to apply Advocate's analysis and fuzzing capabilities to bigger Go projects to uncover their potential concurrency issues in production-grade codebases.
 
 | Project | Bug Types CSV | Total Time CSV |
 |---------|----------------|----------------|
-| [`caddy`](/Examples/Examples_Projects_Results/caddy-master/) | [Bug_Types](/Examples/Examples_Projects_Results/caddy-master/comparison_pivot_Bug_Types.csv) | [Time](/Examples/Examples_Projects_Results/caddy-master/comparison_pivot_Total_Time_s.csv) |
-| [`gin`](/Examples/Examples_Projects_Results/gin-master/)     | [Bug_Types](/Examples/Examples_Projects_Results/gin-master/comparison_pivot_Bug_Types.csv)   | [Time](/Examples/Examples_Projects_Results/gin-master/comparison_pivot_Total_Time_s.csv)   |
-| [`cobra`](/Examples/Examples_Projects_Results/cobra-main/)   | [Bug_Types](/Examples/Examples_Projects_Results/cobra-main/comparison_pivot_Bug_Types.csv)   | [Time](/Examples/Examples_Projects_Results/cobra-main/comparison_pivot_Total_Time_s.csv)   |
+| [`caddy`](Examples/Examples_Projects_Results/caddy-master/) | [Bug_Types](Examples/Examples_Projects_Results/caddy-master/comparison_pivot_Bug_Types.csv) | [Time](Examples/Examples_Projects_Results/caddy-master/comparison_pivot_Total_Time_s.csv) |
+| [`gin`](Examples/Examples_Projects_Results/gin-master/)     | [Bug_Types](Examples/Examples_Projects_Results/gin-master/comparison_pivot_Bug_Types.csv)   | [Time](Examples/Examples_Projects_Results/gin-master/comparison_pivot_Total_Time_s.csv)   |
+| [`cobra`](Examples/Examples_Projects_Results/cobra-main/)   | [Bug_Types](Examples/Examples_Projects_Results/cobra-main/comparison_pivot_Bug_Types.csv)   | [Time](Examples/Examples_Projects_Results/cobra-main/comparison_pivot_Total_Time_s.csv)   |
 
 
 ---
@@ -125,13 +125,13 @@ This directory contains cloned real-world Go projects. The goal is to apply Advo
 ### Quick Start
 
 #### Run
-To execute automated fuzzing tests, use the `run.sh` script with the path to a target project directory. Fuzzing configuration is specified in `config.yaml`.
+To execute automated fuzzing tests, use the `run.py` script with the path to a target project directory. Fuzzing configuration is specified in `config.yaml`.
 
 ```bash
-./run.sh Examples/Examples_Simple/Channel/
+python3 ./run.py ./testing/Examples/Examples_Simple/SelectBlock/
 ```
 
-You will be prompted to select the automation mode. For options 1 and 2, all fuzzing modes listed in the config will be executed.
+You will be prompted to select the automation mode. 
 
 ```
 ========== Advocate Fuzzing Runner ==========
@@ -143,7 +143,7 @@ Select mode:
   5) Exit
 Choice [1-5]: 
 ```
-
+For options 1 and 2, all fuzzing modes listed in the config will be executed.
 For options 3 and 4, you can select a specific fuzzing mode:
 
 ```bash
@@ -155,11 +155,10 @@ Select fuzz mode:
 5) GoPie
 6) GoPie+
 7) GoPieHB
-#? 
+#? 1 // Inputing number 1 selects GFuzz
 ```
 
-For options 2 and 4, an additional prompt will let you choose which test to run. Option 2 runs all modes on the selected test.
-Option 4 runs the selected mode on the selected test.
+For options 2 and 4, an additional prompt will let you choose which test to run, as all test cases are searched for in the provided test directory. Option 2 runs all modes on the selected test and option 4 runs the selected mode on the selected test.
 
 **Example**: Found tests within `Examples/Examples_Simple/Channel/`
 ```bash
@@ -168,19 +167,19 @@ Option 4 runs the selected mode on the selected test.
 3) TestUnbufferedSendRecv
 4) TestUnbufferedLeakNoRecv
 5) TestUnbufferedRecvNoSend
-#? 
+#? 1 // Inputing number 1 selects the first test case
 ```
 
 
 
 #### Results
-In all cases a `/results` directory is created within the directory given as argument to the `run.sh`.
+In all cases a `/results` directory is created within the directory given as argument to the `run.py`.
 
 Each test case (e.g., `TestBufferedFillNoRead`) gets its own subfolder under `/results/`. Inside that, results for each fuzzing mode (e.g., `GFuzz`, `GoPie+`) are stored in separate subdirectories named after the mode.
 
 If you selected **option 1** (all tests, all modes) or **option 2** (one test, all modes), a `combined/` folder and a `comparison.csv` are generated inside the test's results folder. These allow comparing all modes for that test using defined metrics.
 
-For a full explanation of the metrics, see [`/Docs/Metrics.md`](Docs/Metrics.md).
+For a full explanation of the scripts, see [`/Docs/Scripts.md`](Docs/Scripts.md).
 
 
 **Example:**
@@ -202,32 +201,38 @@ Channel/
 |   ├── ...
 ```
 
-#### Comparing Specific Metrics
 
-While each test's `comparison.csv` and `combined/` directory summarize all modes **for that test only**, you can generate **cross-test comparisons** of specific metrics using the script `compare_tests_pviot.py`:
+#### Comparing Specific Metrics
+While each test's `comparison.csv` and `combined/` directory summarize all modes **for that specific test only**, you can generate **cross-test comparisons** of specific metrics using the script `compare_all_by_one.py`:
 
 ```bash
-python3 Scripts/tools/compare_tests_pviot.py Examples/Examples_Simple/Channel/results/
+python3 ./testing/Scripts/compare/compare_all_by_one.py ./testing/Examples/Examples_Simple/SelectBlock/results/
 ```
 
-This script scans all test result folders under a given `results/` directory and builds a **pivot table** comparing one metric across all tests and modes.
-
+This script scans for existing **comparison.csv** in each test case folder under a given `results/` directory and builds a **pivot table** comparing one metric across all tests and modes.
 
 You will be prompted to select a metric:
 
 ```bash
-Available metrics to compare:
-1) Total_Time_s
-2) Rec_s
-3) Ana_s
-4) Rep_s
-5) Runs_per_Minute
-6) Unique_Bugs
-7) Total_Bugs
-8) Bug_Types
-9) Bugs_per_1000_Runs
-10) Bugs_per_Minute
-Select a metric by number: 
+Available metrics:
+1) Ana_s
+2) Bug_Types
+3) Bugs_per_Minute
+4) Confirmed_Replays
+5) Leaks
+6) Panics
+7) Rec_s
+8) Rep_s
+9) Replays_Successful
+10) Replays_Written
+11) Runs_per_Minute
+12) Total_Bugs
+13) Total_Runs
+14) Total_Time_s
+15) Unique_Bugs
+Select metric by number: # Inputing 14 creates a Pivot table for metric "Total_Time_s"
 ```
 
-The result is a `comparison_pivot_[METRIC].csv` which is saved directly under the `/results/` directory you provided. This file lets you easily compare the selected metric across all tests and modes in tabular form.
+The result is a `comparison_pivot_[METRIC].csv` which is saved directly under the `/results/` directory you provided. Here is an [example](Examples/Examples_Simple/SelectBlock/results/comparison_pivot_Total_Time_s.csv). This file lets you easily compare the selected metric across all tests and modes in tabular form.
+
+For a full explanation of the metrics, see [`/Docs/Metrics.md`](Docs/Metrics.md).

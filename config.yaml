@@ -1,4 +1,4 @@
-advocate_bin: "./ADVOCATE/advocate/advocate"
+advocate_bin: "./advocate/advocate"
 modes:
   - GFuzz
   - GFuzzHB
@@ -7,7 +7,27 @@ modes:
   - GoPie
   - GoPie+
   - GoPieHB
+
 max_runs: 100
 timeout: 60
 record_time: true
 record_stats: true
+
+# Expandable
+log_files:
+  - output.log
+  - results_machine.log
+  - results_readable.log
+  - total_output.log
+  - total_results_machine.log
+  - total_results_readable.log
+
+stat_prefixes:
+  - statsAll
+  - statsFuzzing
+  - statsAnalysis
+  - statsMisc
+  - statsProgram
+  - statsTrace
+  - times_detail
+  - times_total
